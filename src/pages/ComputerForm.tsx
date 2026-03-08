@@ -22,7 +22,7 @@ const ComputerForm = () => {
     processor: existing?.processor ?? "",
     ram: existing?.ram ?? "",
     storage: existing?.storage ?? "",
-    status: existing?.status === "working" ?? true,
+    status: existing ? existing.status === "working" : true,
     changeDescription: "",
   });
 
